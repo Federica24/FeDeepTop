@@ -19,9 +19,9 @@ def process_signal(rootfile):
 
     # Declaration of a list of the "kinematics-list"
     kinematics_variables_mult = 7
-    list_gentopkin = [[] for i in repeat(None, kinematics_variables_mult)]
+    list_gentopkin = [[] for i in repeat(None, kinematics_variables_mult-3)]
     list_fatjetkin = [[] for i in repeat(None, kinematics_variables_mult)]
-    kinematics_gentop_branches = ['GenTop_pt', 'GenTop_eta', 'GenTop_phi', 'GenTop_mass', 'GenTop_tau1', 'GenTop_tau2', 'GenTop_tau3']
+    kinematics_gentop_branches = ['GenTop_pt', 'GenTop_eta', 'GenTop_phi', 'GenTop_mass']
     #kinematics_gentop_branches = ['GenTop_pt', 'GenTop_eta', 'GenTop_phi', 'GenTop_mass', 'GenTop_tau1', 'GenTop_tau2', 'GenTop_tau3']
     kinematics_fatjet_branches = ['FatJet_pt', 'FatJet_eta', 'FatJet_phi', 'FatJet_mass', 'FatJet_tau1', 'FatJet_tau2', 'FatJet_tau3']
 
